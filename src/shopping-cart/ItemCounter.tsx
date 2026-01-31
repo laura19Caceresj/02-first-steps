@@ -37,4 +37,3 @@ export const ItemCounter = ({ name, quantity }: Props) => {
 
 
 
-
