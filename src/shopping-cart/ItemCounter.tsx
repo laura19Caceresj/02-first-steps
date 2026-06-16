@@ -1,9 +1,19 @@
+import { useState } from "react";
+
 interface Props {
   name: string;
   quantity?: number;
 }
 
 export const ItemCounter = ({ name, quantity }: Props) => {
+
+
+  const [count, setCount] = useState(10);
+
+  const handleClick = () => {
+    console.log(`Click en ${name}`);
+  }
+
   return (
     <section
       style={{
@@ -20,14 +30,7 @@ export const ItemCounter = ({ name, quantity }: Props) => {
       >
         {name}
       </span>
-      <button
-        onClick={() => {
-          console.log(`
-            Click`);
-        }}
-      >
-        +1
-      </button>
+      <button onClick={handleClick}>+1</button >
       <span>{quantity}</span>
       <button>-1</button>
     </section>
