@@ -14,7 +14,7 @@ const address = {
 
 
 
-.jjjjjj
+
 
 
 export const MyAwesomeApp = () => {
