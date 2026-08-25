@@ -18,10 +18,13 @@ export const ItemCounter = ({ name, quantity = 1 }: Props) => {
 
   // 
   const handleAdd = () => {
+    console.log('Hola Mundo desde ItemCounter');
     setCount(count + 1);
   }
 
   const handleSubtract = () => {
+    console.log('Hola Mundo laura');
+
     if (count === 1) return;
     setCount(count - 1);
   }
